@@ -491,3 +491,36 @@ body {
         grid-row-gap: 47px;
     }
 }
+
+// SUBSCRIBE
+
+.subscribe_wrap {
+    background-image: url(../img/subscribeBackground.jpg);
+    object-fit: cover;
+}
+
+.subscribe_container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 230px;
+    padding-right: 230px;
+    height: 448px;
+    align-items: center;
+}
+
+.subscribe_comment {
+    text-align: center;
+    margin-right: 224px;
+}
+
+.subscribe_comment_text {
+    font-size: 20px;
+    line-height: 24px;
+    color: #222224;
+}
+
+.subscribe_form {
+    width: 557px;
+    height: 142px;
+    background: red;
+}
