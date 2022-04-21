@@ -9,8 +9,8 @@ body {
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 75px 1fr minmax(200px, auto);
-      grid-template-rows: 75px 1fr minmax(200px, auto);
+  -ms-grid-rows: 75px 1fr auto;
+      grid-template-rows: 75px 1fr auto;
 }
 
 .container {
@@ -681,6 +681,80 @@ body {
   }
   .subscribe_form_container {
     margin-top: 59px;
+  }
+}
+
+.footer {
+  background: #222224;
+  padding-left: 32px;
+  padding-right: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+
+.footer_social_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 7px;
+  justify-self: flex-start;
+}
+
+.footer_social_img_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  background: #FFFFFF;
+}
+
+.footer_social_img_container:hover {
+  background: #F16D7F;
+}
+
+.footer_social_img_container:hover img {
+  -webkit-filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+          filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+@media (max-width: 550px) {
+  .footer_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 43px;
+    padding-bottom: 9px;
+  }
+  .footer_social_container {
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
