@@ -1537,4 +1537,176 @@ body {
     margin-bottom: 0;
   }
 }
+
+.registration_container {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 360px 1fr;
+      grid-template-columns: 360px 1fr;
+  grid-column-gap: 129px;
+}
+
+@media (max-width: 1157px) {
+  .registration_container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .registration_container {
+    padding-top: 40px;
+    grid-column-gap: 23px;
+  }
+}
+
+@media (max-width: 767px) {
+  .registration_container {
+    padding-left: 8px;
+    padding-right: 8px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0;
+    grid-row-gap: 40px;
+  }
+}
+
+.registration_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration_form_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration_form_description {
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+
+.registration_form_textInput {
+  background: #FFFFFF;
+  outline: none;
+  border: 1px solid #A4A4A4;
+  padding: 14px 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 20px;
+}
+
+.radio_container {
+  margin-top: 31px;
+  margin-bottom: 33px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio_container > input {
+  height: 17px;
+  width: 17px;
+}
+
+.radio_container > label {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.otherSex_visibly {
+  display: none;
+}
+
+.registration_form > button {
+  background: #F16D7F;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 29px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration_form > button > span {
+  margin-right: 20px;
+}
+
+.details_container {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.details_header {
+  margin-bottom: 21px;
+}
+
+.details_header > div:first-child {
+  margin-bottom: 22px;
+}
+
+.perk_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.perk_container:last-child {
+  margin-bottom: 0;
+}
+
+.perk_container > img {
+  margin-right: 23px;
+}
+
+@media (max-width: 1023px) {
+  .otherSex_visibly {
+    display: inherit;
+  }
+  .details_container {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .details_header > div:first-child {
+    margin-bottom: 32px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
