@@ -1,0 +1,6 @@
+.b-userButtons {
+    display: grid;
+    grid-column-gap: 33px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+}
