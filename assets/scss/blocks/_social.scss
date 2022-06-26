@@ -1,0 +1,26 @@
+.b-social {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 7px;
+    justify-self: flex-start;
+
+    @media (max-width: 550px) {
+        margin-bottom: 40px;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        background: #FFFFFF;
+
+        &:hover {
+            background: $minorColor;
+        }
+
+        &:hover img {
+            filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+        }
+    }
+}
