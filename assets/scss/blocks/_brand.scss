@@ -1,4 +1,5 @@
 .b-brand {
+    position: relative;
     background: #F1E4E6;
     margin-bottom: 65px;
 
@@ -25,6 +26,37 @@
             @media (max-width: 767px) {
                 display: none;
             }
+        }
+    }
+
+    &__naviMenu {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        box-shadow: black 10px -8px 20px 0px;
+        background: white;
+        width: 232px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    &__naviExitButton {
+        margin: 0;
+        padding-top: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        font-family: inherit;
+        align-self: flex-end;
+        display: flex;
+        border: none;
+        outline: none;
+        background: transparent;
+
+        &:hover {
+            filter: invert(70%) sepia(20%) saturate(2764%) hue-rotate(303deg) brightness(89%) contrast(115%);
         }
     }
 }

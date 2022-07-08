@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="assets/scripts/brandNaviMenu.js"></script>
     <title>Shop</title>
 </head>
 
@@ -18,12 +19,18 @@
                     <img src="assets/img/search.svg" alt="SEARCH">
                 </div>
                 <div class="b-userButtons">
-                    <img src="assets/img/menu.svg" alt="MENU">
-                    <img class="b-userButtons__button__visibly" src="assets/img/user.svg" alt="USER">
-                    <div class="b-basket b-userButtons__button__visibly">
-                        <img src="assets/img/basket.svg" alt="BASKET">
-                        <span>5</span>
-                    </div>
+                    <button class="b-userButtons__button" id="buttonMenu">
+                        <img src="assets/img/menu.svg" alt="MENU">
+                    </button>
+                    <button class="b-userButtons__button b-userButtons__button__visibly">
+                        <img src="assets/img/user.svg" alt="USER">
+                    </button>
+                    <button class="b-userButtons__button">
+                        <div class="b-basket b-userButtons__button__visibly">
+                            <img src="assets/img/basket.svg" alt="BASKET">
+                            <span>5</span>
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>
@@ -37,6 +44,46 @@
                         <div class="b-brandText__textContainer">
                             <div class="b-brandText__first">THE BRAND</div>
                             <div class="b-brandText__second">OF LUXERIOUS <span>FASHION</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-brand__naviMenu hidden" id="naviMenu">
+                    <button class="b-brand__naviExitButton" id="buttonCloseMenu">
+                        <img src="assets/img/exitImg.svg" alt="Закрыть">
+                    </button>
+
+                    <div class="b-naviMenu">
+                        <div class="b-naviMenu__container">
+                            <div class="b-naviMenu__title">Menu</div>
+                            <ul>
+                                <li>Man
+                                    <ul>
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">Bags</a></li>
+                                        <li><a href="#">Denim</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                    </ul>
+                                </li>
+                                <li>Women
+                                    <ul>
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">Jackets & Coats</a></li>
+                                        <li><a href="#">Polos</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                    </ul>
+                                </li>
+                                <li>Kids
+                                    <ul>
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">Jackets & Coats</a></li>
+                                        <li><a href="#">Polos</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Bags</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
