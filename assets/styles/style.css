@@ -49,6 +49,10 @@ body {
   grid-column-gap: 40px;
   grid-template-columns: repeat(2, 1fr);
   align-items: end;
+  fill: #E8E8E8;
+}
+.b-mainAndSearch > svg:hover {
+  fill: #f16d7f;
 }
 
 .b-userButtons {
@@ -56,6 +60,7 @@ body {
   grid-column-gap: 33px;
   grid-auto-flow: column;
   align-items: end;
+  fill: #E8E8E8;
 }
 @media (max-width: 767px) {
   .b-userButtons {
@@ -71,7 +76,7 @@ body {
   outline: none;
 }
 .b-userButtons__button:hover {
-  filter: invert(70%) sepia(20%) saturate(2764%) hue-rotate(303deg) brightness(89%) contrast(115%);
+  fill: #f16d7f;
 }
 @media (max-width: 767px) {
   .b-userButtons__button__visibly {
@@ -143,19 +148,21 @@ body {
   overflow: auto;
 }
 .b-brand__naviExitButton {
-  margin: 0;
-  padding-top: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
   font-family: inherit;
   align-self: flex-end;
   display: flex;
   border: none;
   outline: none;
   background: transparent;
+  fill: #6F6E6E;
 }
 .b-brand__naviExitButton:hover {
-  filter: invert(70%) sepia(20%) saturate(2764%) hue-rotate(303deg) brightness(89%) contrast(115%);
+  fill: #f16d7f;
 }
 
 .b-brandText {
@@ -442,8 +449,9 @@ body {
   display: flex;
   align-items: center;
   padding: 11px 13px;
+  fill: #E8E8E8;
 }
-.b-featuredItem__button > img {
+.b-featuredItem__button > svg {
   margin-right: 11px;
   height: 26px;
   width: 24px;

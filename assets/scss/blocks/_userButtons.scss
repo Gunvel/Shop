@@ -3,6 +3,7 @@
     grid-column-gap: 33px;
     grid-auto-flow: column;
     align-items: end;
+    fill: #E8E8E8;
 
     @media (max-width: 767px) {
         grid-column-gap: 0;
@@ -17,7 +18,7 @@
         outline: none;
 
         &:hover {
-            filter: invert(70%) sepia(20%) saturate(2764%) hue-rotate(303deg) brightness(89%) contrast(115%);
+            fill: $minorColor;
         }
 
         &__visibly {

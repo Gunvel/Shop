@@ -44,19 +44,21 @@
     }
 
     &__naviExitButton {
-        margin: 0;
-        padding-top: 16px;
-        padding-right: 16px;
-        box-sizing: border-box;
+        margin-top: 16px;
+        margin-right: 16px;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding: 0;
         font-family: inherit;
         align-self: flex-end;
         display: flex;
         border: none;
         outline: none;
         background: transparent;
+        fill: #6F6E6E;
 
         &:hover {
-            filter: invert(70%) sepia(20%) saturate(2764%) hue-rotate(303deg) brightness(89%) contrast(115%);
+            fill: $minorColor;
         }
     }
 }
