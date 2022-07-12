@@ -8,19 +8,17 @@
         margin-bottom: 40px;
     }
 
-    &__img {
+    &__imgButtom {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 8px;
         background: #FFFFFF;
+        fill: black;
 
         &:hover {
             background: $minorColor;
-        }
-
-        &:hover img {
-            filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+            fill: white;
         }
     }
 }
