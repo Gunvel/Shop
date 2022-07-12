@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 75px 1fr auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 .container {
@@ -38,3 +38,6 @@ body {
 @import "blocks/footer";
 @import "blocks/social";
 @import "blocks/naviMenu";
+@import "blocks/pageNavHeader";
+@import "blocks/breadcrumb";
+@import "blocks/filter";
